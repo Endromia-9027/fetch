@@ -4,5 +4,5 @@ services:
   env: python
   plan: free
   buildCommand: ""
-  startCommand: gunicorn src.fetch.api:app
+  startCommand: gunicorn fetch.api:app
 
