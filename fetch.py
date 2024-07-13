@@ -37,6 +37,10 @@ def fetch_video_data(url):
         app.logger.error(f"An error occurred: {str(e)}")
         return {"error": "An internal error occurred"}
 
+@app.route('/', methods=['GET'])
+def show_main_screen():
+    return "Hi"
+
 @app.route('/fetch_videos', methods=['GET'])
 def fetch_videos():
     url = request.args.get('url')
