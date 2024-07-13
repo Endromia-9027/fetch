@@ -1,6 +1,8 @@
 from flask import Flask, jsonify, request
 from bs4 import BeautifulSoup
 import requests
+from werkzeug.utils import quote as url_quote
+
 
 app = Flask(__name__)
 
